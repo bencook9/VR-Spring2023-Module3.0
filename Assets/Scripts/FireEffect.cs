@@ -1,4 +1,4 @@
-﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
+//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 
 using UnityEngine;
 using System.Collections;
@@ -7,20 +7,20 @@ using System;
 
 namespace Valve.VR.InteractionSystem.Sample
 {
-    public class ButtonEffect : MonoBehaviour
+    public class FireEffect : MonoBehaviour
     {
         public GameObject fireObject;
 
         public void OnButtonDown(Hand fromHand)
         {
             fireObject.SetActive(true);
-            ColorSelf(Color.cyan);
+            ColorSelf(Color.black);
             fromHand.TriggerHapticPulse(1000);
         }
 
         public void OnButtonUp(Hand fromHand)
         {
-            ColorSelf(Color.white);
+            ColorSelf(Color.red);
         }
 
         private void ColorSelf(Color newColor)
