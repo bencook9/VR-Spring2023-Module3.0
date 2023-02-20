@@ -724,7 +724,7 @@ GameObject:
   - component: {fileID: 890876071}
   m_Layer: 0
   m_Name: Ball
-  m_TagString: Untagged
+  m_TagString: Attackable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -737,7 +737,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 890876063}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -800,7 +800,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 890876063}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3, y: 0.5, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -819,7 +819,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -1004,7 +1004,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 925367923}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1, y: 1.4, z: 1}
+  m_LocalPosition: {x: -0.95, y: 2.17, z: 1.17}
   m_LocalScale: {x: 0.2, y: 0.30000007, z: 0.20000006}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1935,6 +1935,7 @@ GameObject:
   - component: {fileID: 5250670297312535836}
   - component: {fileID: 926886323669301766}
   - component: {fileID: 5250670297312535837}
+  - component: {fileID: 5250670297312535838}
   m_Layer: 0
   m_Name: royal guards claymore
   m_TagString: Untagged
@@ -1950,7 +1951,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2891284057973415962}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0.73333323, z: 0}
+  m_LocalPosition: {x: 8.48, y: 0.73, z: -0}
   m_LocalScale: {x: 5, y: 5, z: 3.3333325}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1973,9 +1974,21 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2891284057973415962}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -1173123271827291250, guid: 7e6260b2a0de12a4b89887517dea2c05, type: 3}
+--- !u!114 &5250670297312535838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2891284057973415962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b028133e8fe3f574398d65428bdc4409, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
