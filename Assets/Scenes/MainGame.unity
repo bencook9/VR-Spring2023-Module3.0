@@ -2123,7 +2123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87ecd85534cfa864e9853adb7bbba857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 0
   winTextObject: {fileID: 0}
 --- !u!114 &890876070
 MonoBehaviour:
@@ -5386,7 +5386,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2891284057973415962}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b028133e8fe3f574398d65428bdc4409, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ba430d0303968e41ba9154120cae6f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &6431450817310530316
