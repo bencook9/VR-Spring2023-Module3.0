@@ -7,20 +7,20 @@ using System;
 
 namespace Valve.VR.InteractionSystem.Sample
 {
-    public class FireEffect : MonoBehaviour
+    public class RedTeleport : MonoBehaviour
     {
-        public GameObject fireObject;
+        // public GameObject fireObject;
 
         public void OnButtonDown(Hand fromHand)
         {
-            fireObject.SetActive(true);
+            // fireObject.SetActive(true);
             // ColorSelf(Color.black);
             fromHand.TriggerHapticPulse(1000);
         }
 
         public void OnButtonUp(Hand fromHand)
         {
-            // ColorSelf(Color.orange);
+            // ColorSelf(Color.red);
         }
 
         private void ColorSelf(Color newColor)
