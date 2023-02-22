@@ -7,6 +7,7 @@ public class EnemyLogic : MonoBehaviour
     public Vector3 catapultLaunch = new Vector3(-10.0f, 10.0f, 0.0f);
     bool catapultFired = false;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,17 +32,17 @@ public class EnemyLogic : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-
-        if (other.gameObject.CompareTag("Attackable"))
+        /*
+        if (other.gameObject.CompareTag("Nothing"))
         {
-            //other.gameObject.SetActive(false);
-
-            other.gameObject.transform.position = new Vector3(0, 5, 0);
+            
+            //other.gameObject.transform.position = new Vector3(0, 50, 0);
             //AudioSource.PlayClipAtPoint(sliceSound, transform.position);
         } else
         {
             other.gameObject.SetActive(true);
         }
+        */
     }
 
 
