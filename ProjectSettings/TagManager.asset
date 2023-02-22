@@ -9,6 +9,7 @@ TagManager:
   - FxTemporaire
   - Pin
   - Attackable
+  - FlagPole
   layers:
   - Default
   - TransparentFX

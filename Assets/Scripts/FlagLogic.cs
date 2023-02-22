@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyLogic : MonoBehaviour
+public class FlagLogic : MonoBehaviour
 {
-
 
     // Start is called before the first frame update
     void Start()
@@ -21,17 +20,19 @@ public class EnemyLogic : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        /*
-        if (other.gameObject.CompareTag("Nothing"))
+
+        if (other.gameObject.CompareTag("Attackable"))
         {
+            //End the game or remove one point?
+
+            //other.gameObject.SetActive(false);
             
-            //other.gameObject.transform.position = new Vector3(0, 50, 0);
+            other.gameObject.transform.position = new Vector3(0, 50, 0);
             //AudioSource.PlayClipAtPoint(sliceSound, transform.position);
         } else
         {
             other.gameObject.SetActive(true);
         }
-        */
     }
 
 
