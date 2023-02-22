@@ -9,11 +9,11 @@ namespace Valve.VR.InteractionSystem.Sample
 {
     public class RedTeleport : MonoBehaviour
     {
-        // public GameObject fireObject;
+        public GameObject playerObject;
 
         public void OnButtonDown(Hand fromHand)
         {
-            // fireObject.SetActive(true);
+            playerObject.transform.position = new Vector3(-14f, 25.5f, -14f);
             // ColorSelf(Color.black);
             fromHand.TriggerHapticPulse(1000);
         }
