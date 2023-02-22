@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnemyLogic : MonoBehaviour
 {
+    public Vector3 catapultLaunch = new Vector3(-10.0f, 10.0f, 0.0f);
+    bool catapultFired = false;
 
     // Start is called before the first frame update
     void Start()
@@ -16,6 +18,15 @@ public class EnemyLogic : MonoBehaviour
     {
 
 
+    }
+
+    void FixedUpdate()
+    {
+        if (!catapultFired)
+        {
+            GetComponent<Rigidbody>().AddForce(catapultLaunch, ForceMode.Impulse);
+            catapultFired = true;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
