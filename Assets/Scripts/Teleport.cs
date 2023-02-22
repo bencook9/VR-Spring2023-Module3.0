@@ -19,19 +19,19 @@ namespace Valve.VR.InteractionSystem.Sample
 
         public void OnButtonPressedBlue(Hand fromHand)
         {
-            playerObject.transform.position = new Vector3(14f, 25.5f, 14f);
+            playerObject.transform.position = new Vector3(-14f, 25.5f, 14f);
             fromHand.TriggerHapticPulse(1000);
         }
 
         public void OnButtonPressedGreen(Hand fromHand)
         {
-            playerObject.transform.position = new Vector3(-14f, 25.5f, -14f);
+            playerObject.transform.position = new Vector3(14f, 25.5f, -14f);
             fromHand.TriggerHapticPulse(1000);
         }
 
         public void OnButtonPressedYellow(Hand fromHand)
         {
-            playerObject.transform.position = new Vector3(-14f, 25.5f, -14f);
+            playerObject.transform.position = new Vector3(14f, 25.5f, 14f);
             fromHand.TriggerHapticPulse(1000);
         }
 
