@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class EnemyLogic : MonoBehaviour
 {
-    public Vector3 catapultLaunch = new Vector3(-10.0f, 100.0f, 0.0f);
+    public Vector3 catapultLaunch = new Vector3(100.0f, 100.0f, 100.0f);
     bool catapultFired = false;
 
-    int time = 500;
+    int time = 200;
 
     // Start is called before the first frame update
     void Start()
@@ -30,9 +30,10 @@ public class EnemyLogic : MonoBehaviour
         if (time < 0)
         {
 
-            //move to center code here
+            GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
+            GetComponent<Rigidbody>().gameObject.transform.position = new Vector3(0, 26, 0);
             catapultFired = false;
-            time = 500;
+            time = 200;
         }
 
 
