@@ -25,7 +25,7 @@ public class SwordLogic : MonoBehaviour
         {
             //other.gameObject.SetActive(false);
 
-            other.gameObject.transform.position = new Vector3(0, 5, 0);
+            other.gameObject.transform.position = new Vector3(0, 0, 0);
             //AudioSource.PlayClipAtPoint(sliceSound, transform.position);
         } else
         {
