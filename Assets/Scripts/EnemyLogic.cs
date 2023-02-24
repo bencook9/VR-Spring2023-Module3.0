@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyLogic : MonoBehaviour
 {
-    public Vector3 catapultLaunch = new Vector3(-10.0f, 100.0f, 0.0f);
+    public Vector3 catapultLaunch = new Vector3(20.0f, 20.0f, 20.0f);
     bool catapultFired = false;
 
     int time = 200;
